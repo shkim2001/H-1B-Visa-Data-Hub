@@ -1,0 +1,24 @@
+h1 {
+    color: #047C51;
+    text-align: center;
+    padding: 200px;
+    margin: auto;
+    width: 50%;
+    font-family: Verdana, Geneva, sans-serif; 
+    font-size: 100px;
+    
+}
+
+p {
+    color: #013321;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif; 
+    font-size: 20px;
+}
+
+html {
+    background-color: #ffffff;
+    border: 30px solid #047C51;
+}

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>List</title>
+        <h1>{{ title }}</h1>
+        {% if type == "state": %}
+            <h1>List of Employers in {{ target }} for {{mostRecentYear}}:</h1>
+        {% else: %}
+            <h1>List of Employers with at least {{ target }} Minimum Initial Approval(s) for {{mostRecentYear}}:</h1>
+        {% endif %}
+
+    </head>
+    <body>
+        {% if companiesList|length != 0: %}
+        <dl>
+            <strong>Companies: </strong>
+            <br>
+        <br>
+        {% for company in companiesList: %}
+            <dd>
+            {{ company["companyName"] }}        
+            </dd>
+	    {% endfor %}
+	    </dl>
+        {% else: %}
+        <h2>There are no companies that satisfy the condition.</h2>
+        {% endif %}
+    </body>
+</html>

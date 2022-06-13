@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='datastyle.css') }}">
+        <title>{{ title }}</title>
+        <h1>Welcome to H-1B Employer Data Hub!</h1>
+        <p>This program allows users to gather information about H1b-Visa administered by the US government.</p>
+        <p>There are currently two features that you can test at the moment.</p>
+    </head>
+    <body>
+        <ul>
+            <strong>Get Companies By State:</strong>
+            <li>Route: <code>/companies/search?state=YourState</code> </li>
+            <li>Notice that the <strong><code>YourState</code></strong> is where you put the state. 
+            <br><strong>YourState</strong> needs to be in a two letter abbreviation => ex) CA, MN</li>    
+        </ul>
+        <ul>
+            <strong>Get Companies With Minimum Initial Approval: </strong>
+            <li>Route: <code>/companies/search?minInitApproval=YourNumber</code> </li>
+            <li>Notice that the <strong><code>YourNumber</code></strong> is where you put the number for minimum threshold. 
+            <br><strong>YourNumber</strong> has to be a number. 
+            </li>    
+        </ul>
+    </body>
+    <body>
+
+    </body>
+</html>

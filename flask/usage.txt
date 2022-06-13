@@ -1,0 +1,26 @@
+
+*************************************************************************
+                               USAGE 
+*************************************************************************
+
+  1. --state [state name]: Use this command to get H1b*Visa Information 
+                 for all companies in a specified state.
+
+                              Example: 
+              * python3 main.py dummyData.csv --state CA
+
+  2. --company [company name]: Use this command to get a detailed H-1B Visa 
+                  information for a specific company.
+
+                              Example: 
+       * python3 main.py dummyData.csv --company FUNKTRONIC LABS
+
+  3. --minInitApproval [threshold]: Use this command to get a list of 
+  companies with H*1B initial approval greater than some specified number.
+
+                              Example: 
+          * python3 main.py dummyData.csv --minInitApproval 2
+
+*************************************************************************   
+
+ 

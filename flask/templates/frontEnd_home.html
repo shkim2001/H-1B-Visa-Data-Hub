@@ -1,0 +1,53 @@
+<html>
+  <!-- all pages start and end with this tag -->
+  <!-- Header information: links to external scripts and style files, other metadata about the page. -->
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='styles/home.css')}}"
+    />
+    <!-- The title is mandatory. If you use tabs, the title appears in the page's tab in your browser.-->
+    <title>H-1B Data Hub</title>
+  </head>
+  <!-- The body consists of the visible parts of the web page. -->
+  <body>
+    <h1><div id="title" onclick="location.href='/home'">H-1B Data Hub</div></h1>
+
+    <div class="navbar">
+      <a href="/about">ABOUT</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          FEATURES
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/companies/search">COMPANY SEARCH</a>
+          <a href="/ranking">TOP 10 RANKING</a>
+        </div>
+      </div>
+      <a href="/contact">CONTACT</a>
+    </div>
+
+    <div id="introduction">
+      <p>Welcome to H-1B Employer Data Hub!</p>
+      <p>
+        This program allows the users to gather information about H-1B Visa
+        administered by the US government.
+      </p>
+    </div>
+
+    <div id="searchSection">
+      <form action="companies/search">
+        <input
+          type="text"
+          name="company"
+          value=""
+          required
+          placeholder="Enter a company you want to search for!"
+        />
+        <input type="submit" value="Search Company" />
+      </form>
+    </div>
+
+  </body>
+</html>
